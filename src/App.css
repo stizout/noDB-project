@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.primary {
+  display: flex;
+}
+
+.right-nav {
+  flex: .35;
+  background-color: green;
+}
+
+.movie-container {
+  display: flex;
+  width: 700px;
+  flex: 2;
+  border: 1px dashed gray;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  background-color: lightblue;
+}
+
+.image {
+  flex: 1;
+  max-width: 200px;
+}
+
+.movie-info {
+  flex: 1;
+}
