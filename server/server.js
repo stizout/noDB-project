@@ -69,13 +69,12 @@ app.delete(`/api/viewMovies/delete/:id`, (req, res) => {
 })
 
 app.put(`/api/update/:id`, (req, res) => {
-    const { id } = req.params
-    console.log("req.params", id);
+    console.log(req.body)
+    console.log(req.params)
     const { title, date, genre, imdb, poster} = req.body
     let index = null;
     movies.forEach((movie) => {
-        console.log('movie.id', movie.id)
-        if(movie.id == id) {
+        if(movie.id == req.params.id) {
             index = movie.id
             console.log("index", index)
         }

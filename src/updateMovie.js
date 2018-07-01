@@ -24,7 +24,6 @@ class Update extends Component {
     }
 
     handlePostUpdate(id) {
-        console.log(this.props.movies)
         axios.put(`/api/update/${id}`, this.state).then(res => {
             
             this.setState({
