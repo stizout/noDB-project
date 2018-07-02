@@ -90,7 +90,7 @@ app.put(`/api/update/:id`, (req, res) => {
         title: title || movies[index].title,
         date: date || movies[index].date,
         genre: genre || movies[index].genre,
-        imdb: imdb || movies[index].genre,
+        imdb: imdb || movies[index].imdb,
         poster: poster || movies[index].poster,
         // id: movies[index].id
     }

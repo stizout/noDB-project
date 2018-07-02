@@ -1,9 +1,14 @@
 body {
-  background-image: url("https://images-na.ssl-images-amazon.com/images/I/51poKKV63GL.jpg");
+  background-image: url("https://inspirationhut.net/wp-content/uploads/2013/05/41.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+#header {
+  color: white;
+  font-family: 'Raleway', sans-serif;
 }
 
 .App {
@@ -15,18 +20,22 @@ body {
 }
 
 .right-nav {
-  flex: .35;
-  background-color: green;
+  flex: .5;
+  margin-left: 10px;
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  max-width: 330px;
 }
 
 .movie-container {
   display: flex;
   width: 700px;
   flex: 2;
-  border: 1px dashed gray;
   margin-bottom: 15px;
-  margin-left: 15px;
-  background-color: lightblue;
+  margin-left: 30px;
+  background-color: lavender;
+  padding: 5px; 
+  font-family: 'Oxygen', sans-serif;
 }
 
 .image {
@@ -34,6 +43,70 @@ body {
   max-width: 200px;
 }
 
+.image1 {
+  max-width: 180px;
+}
+
 .movie-info {
   flex: 1;
+}
+
+.insideButtons {
+  margin-left: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  width: 50px;
+  background-color: white;
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.insideButtons:hover {
+  background: #60adec;
+}
+
+.right-nav button:hover {
+  background: #60adec;
+}
+
+.right-nav button {
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: lavender;
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#temp {
+  font-size: 24px;
+  background: lavender;
+  margin-top: 20px;
+  padding: 20px 0 20px 100px;
+  border-radius: 30px;
+  font-family: 'Oxygen', sans-serif;
+  color: black;
+}
+
+.movieSearch {
+  height: 30px;
+  width: 220px;
+}
+
+.searchResults {
+  background-color: lavender;
+  margin: 5px;
+  border-radius: 30px;
+  padding: 10px;
+  color: black;
+}
+
+#posterLink {
+  word-wrap: break-word;
+  color: darkblue;
+}
+
+#posterLink img {
+  max-width: 80px;
 }

@@ -41,7 +41,7 @@ class Update extends Component {
     render() {
         return (
             <div>
-                <button onClick={() => this.showUpdate()}>Edit</button>
+                <button onClick={() => this.showUpdate()} className="insideButtons">Edit</button>
                 {this.state.update ? 
                 <div>
                     <p>Title: <input value={this.state.title} onChange={(e) => this.handleUpdate('title', e.target.value)}/></p>
