@@ -1,3 +1,11 @@
+body {
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/51poKKV63GL.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .App {
   text-align: center;
 }

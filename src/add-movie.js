@@ -23,7 +23,7 @@ class AddMovie extends Component {
           }
 
     handleAddMovie() {
-        axios.post('/api/addmovie/:id', this.state).then((res) => {
+        axios.post('/api/addmovie/', this.state).then((res) => {
             this.setState({
                 title: '',
                 year: '',

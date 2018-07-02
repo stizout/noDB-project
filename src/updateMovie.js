@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 
+
 class Update extends Component {
     constructor() {
         super();
@@ -48,7 +49,7 @@ class Update extends Component {
                     <p>Genre: <input value={this.state.genre} onChange={(e) => this.handleUpdate('genre', e.target.value)}/></p>
                     <p>IMDB: <input value={this.state.imdb} onChange={(e) => this.handleUpdate('imdb', e.target.value)}/></p>
                     <p>Poster URL: <input value={this.state.poster} onChange={(e) => this.handleUpdate('poster', e.target.value)}/></p>
-                    <p><button onClick={() => this.handlePostUpdate()}>Update</button></p>
+                    <p><button onClick={() => this.handlePostUpdate(this.props.id)}>Update</button></p>
                 </div>
                     : null}
               

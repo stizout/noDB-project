@@ -56,26 +56,32 @@ app.post('/api/addmovie', (req,res) => {
 
 app.delete(`/api/viewMovies/delete/:id`, (req, res) => {
     let index = null
-    movies.forEach((movie) => {
+    movies.forEach((movie, i) => {
         if(movie.id == req.params.id) {
-            index = movie.id
+            // index = movie.id
+            index = i
         }
         return index
     })
     console.log(index)
 
-    movies.splice(+req.params.id,1)
+    // movies.splice(+req.params.id,1)
+    movies.splice(index, 1)
     res.json(movies)
 })
 
+app.delete('/api/deleteAll', (req, res) => {
+    movies = [];
+    res.json(movies);
+})
+
 app.put(`/api/update/:id`, (req, res) => {
-    console.log(req.body)
-    console.log(req.params)
     const { title, date, genre, imdb, poster} = req.body
+    const { id } = req.params
     let index = null;
-    movies.forEach((movie) => {
-        if(movie.id == req.params.id) {
-            index = movie.id
+    movies.forEach((movie, i) => {
+        if(movie.id == id) {
+            index = i
             console.log("index", index)
         }
         return index
